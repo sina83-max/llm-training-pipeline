@@ -1,0 +1,16 @@
+# LLM Training Pipeline Configuration
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  
+preprocessing:
+  max_length: 512
+  lowercase: true
+  remove_special_chars: true
+  
+training:
+  batch_size: 16
+  learning_rate: 5e-5
+  epochs: 3
+  model_name: "bert-base-uncased"  # Starting with a smaller model for MVP
